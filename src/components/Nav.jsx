@@ -13,33 +13,38 @@ const Nav = (props) => {
         <div className="nav">
 
             <div className="logo">
+                <div>
+                    <Link to="/">
 
-                <Link to="/">
 
+                        {/* <p id='logo'>MMOVIES </p> */}
+                        <h1>MOVIES</h1>
+                    </Link>
 
-                    {/* <p id='logo'>MMOVIES </p> */}
-                    <h1>MMOVIES</h1>
-                </Link>
+                </div>
+                <div>
+                    <Link className="searchbox" to="/searchproduct/:searchValue">
+                        <input type="text" name="search" placeholder="Search movies" onClick={(e) => {
+                            props.changeSearchItem(e.target.value)
 
+                        }} />
+                        {searchIcon} 
+
+                    </Link>
+                </div>
+            </div>
+
+            <div className='navlinks'>
+                <Link className='links' to="/action"> Action</Link>
+                <Link className='links' to="/drama">Drama</Link>
+                <Link className='links' to="/comedy">Comedy</Link>
+                <Link className='links' to="/scifi">Sci-fi</Link>
+                <Link className='links' to="/signin">Signin</Link>
+                <Link className='links' to="/signup" >Signup</Link>
 
             </div>
-            <Link className="searchbox" to="/searchproduct/:searchValue">
-                <input type="text" name="search" placeholder="Search movies" onClick={(e) => {
-                    props.changeSearchItem(e.target.value)
-
-                }} />
-                {searchIcon}
 
 
-            </Link>
-
-
-            <Link className="navlinks" to="/"> Action</Link>
-            <Link className="navlinks" to="/tv">Drama</Link>
-            <Link className="navlinks" to="/laptop">Comedy</Link>
-            <Link className="navlinks" to="/lifestyle">Horror</Link>
-
-            <Link className="navlinks" to="/accessories">Sci-fi</Link>
 
 
 
