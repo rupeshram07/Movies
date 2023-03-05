@@ -1,29 +1,35 @@
 import React from 'react'
+import '../assets/styles/signup.scss'
 
 const Signup = () => {
   return (
-    <div className="Login">
-      <div className=" Login__container">
+    <div className="Signup">
+      <div className=" Signup__container">
         {/* <img src={'../img/Signin.png'} alt="" /> */}
         <div className="row d-flex justify-content-center">
 
 
           <div className="col-md-4">
-            <div id="loginform" >
-              <h2 id='login'>Sign In</h2>
+            <div id="Signupform" >
+              <h2 id='Signup'>Signup</h2>
               <div className="form-group">
                 <div>
                   <p> Name</p>
                   <input
-                    type="email"
+                    type="name"
                     className="form-control"
                     id="nameInput"
                     name="nameInput"
 
                     placeholder="Enter Name"
-                  // onChange={(event) => setEmail(event.target.value)}
+                 
                   />
                 </div>
+
+
+
+              </div>
+              <div className="form-group">
                 <div>
                   <p>Email address</p>
                   <input
@@ -33,9 +39,10 @@ const Signup = () => {
                     name="EmailInput"
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
-                  // onChange={(event) => setEmail(event.target.value)}
+                  
                   />
                 </div>
+
 
 
               </div>
@@ -47,7 +54,7 @@ const Signup = () => {
                     className="form-control"
                     id="exampleInputPassword1"
                     placeholder="Password"
-                  // onChange={(event) => setPassword(event.target.value)}
+                  
                   />
 
                 </div>

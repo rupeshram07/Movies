@@ -1,0 +1,59 @@
+.Signup {
+    padding: 10px 90px;
+
+    .Signup__container {
+        margin: 80px 0px;
+
+
+        .col-md-4 {
+            display: flex;
+            justify-content: center;
+
+
+            #Signupform {
+                margin-left: 100px;
+                width: 40%;
+                height: 480px;
+                border: 1px solid rgba(164, 161, 161, 0.855);
+                border-radius: 10px;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        margin: 10px 40px;
+                        font-size: larger;
+                    }
+
+
+                    input {
+                        padding: 5px 25px;
+                        width: 300px;
+                        height: 25px;
+                        margin-left: 40px;
+                    }
+
+                }
+
+                button {
+                    margin: 20px 40px;
+                    padding: 10px 30px;
+                    font-size: 15px;
+                    // border: ;
+                }
+
+
+
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 30px;
+            }
+
+
+        }
+
+    }
+}
