@@ -6,8 +6,8 @@ import Action from "./pages/Action";
 import Drama from "./pages/Drama";
 import Scifi from "./pages/Scifi";
 import Signup from "./pages/Signup";
-import Signin from "./pages/Signin";
 import Comedy from "./pages/Comedy";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -20,13 +20,15 @@ function App() {
         <Route path="/drama" element={<Drama />} />
         <Route path="/scifi" element={<Scifi />} />
         <Route path="/comedy" element={<Comedy />} />
-        <Route path="/signin " element={<Signin />} />
+  
+        <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup />} />
 
 
       </Routes>
 
       <Footer />
+     \
 
 
     </Router>
