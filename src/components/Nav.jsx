@@ -28,7 +28,7 @@ const Nav = (props) => {
                             props.changeSearchItem(e.target.value)
 
                         }} />
-                        {searchIcon} 
+                        {searchIcon  } 
 
                     </Link>
                 </div>
